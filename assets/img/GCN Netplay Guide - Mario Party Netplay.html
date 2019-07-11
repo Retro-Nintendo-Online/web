@@ -1,0 +1,169 @@
+
+<!-- saved from url=(0036)http://mariopartynetplay.com/gcn.htm -->
+<html><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Dolphin setup and netplay guide for Mario Party Netplay">
+	<meta property="og:title" content="GCN Netplay Guide - Mario Party Netplay">
+	<meta property="og:site_name" content="mariopartynetplay">
+	<meta property="og:description" content="Dolphin setup and netplay guide for Mario Party Netplay">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="GCN Netplay Guide - Mario Party Netplay">
+	<meta name="twitter:description" content="Dolphin setup and netplay guide for Mario Party Netplay">
+	<title>GCN Netplay Guide - Mario Party Netplay</title>
+	</head><body>&lt;<style>
+            body {margin: 5% auto; background: #f2f2f2; color: #444444; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.8; text-shadow: 0 1px 0 #ffffff; max-width: 73%;}
+            code {background: white;}
+            a {border-bottom: 1px solid #444444; color: #444444; text-decoration: none;}
+            a:hover {border-bottom: 0;}
+    </style>
+
+
+<p><img alt="images" src="./GCN Netplay Guide - Mario Party Netplay_files/mpnet3ds.png"></p>
+<h1>Netplay Setup Guide</h1>
+<h2>Step 1: Download the Emulator</h2>
+<p>Download and extract one of the following:</p>
+<p><a href="http://mariopartynetplay.com/download/Mario%20Party%20Netplay%20GC-Wii.zip">Main</a> | 
+<a href="https://www.mediafire.com/file/o61b3a82oteygzz/Mario%20Party%20Netplay%20GC-Wii.zip">Mirror</a></p>
+<p>This download contains our custom netplay build, which includes 100% saves, optimized netplay settings, game-enhancing codes and more.</p>
+<h2>Step 2: Gather Your Games</h2>
+<p>Obtain ISO files for the games you would like to play. <em>Mario Party 4</em>, <em>Mario Party 5</em>, <em>Mario Party 6</em> and <em>Mario Party 7</em> are all supported.</p>
+<p>Note that only version 1.01 of Mario Party 4 is supported; If you have another version, you can use the converter included with the emulator.</p>
+<p>If you need help ripping your ISOs, try asking google for advice.</p>
+<p>Make sure your ISOs match the following checksums:</p>
+<p>Mario Party 4 (USA) (v1.01).iso: <strong>01de13ad52f1554975e7f316370ba086</strong></p>
+<p>Mario Party 5 (USA).iso: <strong>6b3699ee1f18447c4b2fabb3dd2ebf39</strong></p>
+<p>Mario Party 6 (USA).iso: <strong>010dece78287bcb8cafdeb15f035127a</strong></p>
+<p>Mario Party 7 (USA).iso: <strong>bd367c67fca5d93e581a43d1f61f4514</strong></p>
+<p>You can confirm your checksums by right clicking on the game you're testing and selecting <strong>Properties</strong> &gt; <strong>Info</strong> &gt; <strong>Compute</strong>.</p>
+<h2>Step 3: Set Up the Emulator</h2>
+<p>The emulator should appear under the folder <strong>Mario Party Netplay GC-Wii</strong>. You can launch it using <strong>Dolphin.exe</strong>.</p>
+<p>Using <strong>Dolphin.exe</strong>, double-click <strong>Dolphin could not find any GameCube/Wii ISOs or WADs. Double-click here to set a games directory...</strong> and choose the folder you keep your games.</p>
+<p>Go to <strong>Controllers</strong>. Under <strong>GameCube Controllers</strong>, select your controller from the drop-down menu next to <strong>Port 1</strong>. click <strong>Configure</strong> to the right of the drop-down menu and configure your controls to suit your needs.</p>
+<h1>Netplay Usage Guide</h1>
+<h2>Step 1: Launch Your Game</h2>
+<p>Launch <strong>Dolphin.exe</strong>.</p>
+<p>From here, go to <strong>Tools</strong> &gt; <strong>Start NetPlay</strong>.</p>
+<h2>Step 2: Connect to the Other Players</h2>
+<p>If you are joining someone's lobby, the host should provide you their lobby's host code.</p>
+<p>If you plan to host your own lobby for others to join, pick the <strong>Host</strong> tab and double-click the game you want to host. Click <strong>Copy</strong> next to the room ID and give it to the players who will join you.</p>
+<h2>Step 3: Start the Game</h2>
+<p><strong>Host:</strong> Check <strong>MP4-8: Save Each Turn</strong>.</p>
+<p>Once everyone is together, the host may start the party using <strong>Start</strong>. In case of crashing or desync, make sure settings are shared and restart.</p>
+<h1>Other Notes</h1>
+<p>Every player must have the same save file for saving to work. Be sure to run <strong>Replace.bat</strong> from the emulator's folder to replace the saves before every party you play.</p>
+<p>Player order is decided by the order of the netplay room by default. The host can change controller ports in the netplay window.</p>
+<p>It's possible for multiple people to play from the same computer as long as the controllers they're using are plugged in and the host allows them use of multiple ports.</p>
+<p>It's possible to host a room for 4 other people as long as the host disables their controller in Dolphin.</p>
+<p>Lag is an unfortunate but necessary part of netplay. The host may use the <strong>Buffer</strong> command to increase input buffer and make the game smoother.</p>
+<p>If a save file is corrupted, try formatting the data or redownloading the saves.</p>
+<p>Possible desyncs aren't always truly desyncs, keep playing to make sure if there was truly a desync before restarting.</p>
+<p>Direct connect may be used even when the traversal server is down, and for players who have trouble with the traversal server at all times it may be the only way to play. Forward a port if the traversal server isn't working for you.</p>
+<h1>Frequently Asked Questions</h1>
+<ul>
+<li>I already have Dolphin, do I need to download it again?</li>
+</ul>
+<p>&gt; Yes. This guide provides a version of this emulator geared specifically for netplay, and it's incompatible with other versions.</p>
+<ul>
+<li>How can I reduce netplay lag?</li>
+</ul>
+<p>&gt; 1) Increase buffer</p>
+<p>2) Close any other programs using internet (web browsers, skype)</p>
+<p>3) Make sure no one on the same network is using the internet (family, roommates)</p>
+<p>4) Seek out players from nearby regions</p>
+<p>5) Ensure it's actually netplay lag by having each player test FPS locally</p>
+<ul>
+<li>The game's graphics are bad! Can I make them look better?</li>
+</ul>
+<p>&gt; The resolution and anti-aliasing of a game can be changed without issue, though it is not recommended as the emulation will require more resources. 
+If you'd like to edit these options, load a splitscreen Mini-Game such as MP6's Circuit Maximus offline and confirm the game speed does not decrease.</p>
+<ul>
+<li>How do I use the GameCube Mic accessory over netplay?</li>
+</ul>
+<p>&gt; Mic compatibility is currently not possible over netplay.</p>
+<ul>
+<li>How do I play Mario Party 7's Deluxe Cruise mode over netplay?</li>
+</ul>
+<p>&gt; 8-player netplay is currently not possible over netplay.</p>
+<ul>
+<li>I'd like to continue a party using someone else's save, how do I replace saves manually? </li>
+</ul>
+<p>&gt; Have the player whose save you want to use upload their <strong>MPN-A.USA.raw</strong> file, then download it and stick it in <strong>Mario Party Netplay GC-Wii</strong> &gt; <strong>User</strong> &gt; <strong>GC</strong>.</p>
+<h1>Troubleshooting</h1>
+<ul>
+<li>Whenever I try to join someone's traversal lobby, Dolphin just stalls and I can't connect!</li>
+</ul>
+<p>&gt; Depending on how your network is configured, you may only be able to connect to lobbies hosted over Direct Connect. Either have the player unable to connect host the traversal lobby themselves or have the host forward a port and host over Direct Connect. If you need help forwarding a port, try following <a href="https://wiki.zandronum.com/Port_Forwarding">this</a> guide.</p>
+<ul>
+<li>I was playing Mario Party and the board went black! How do I restore it?</li>
+</ul>
+<p>&gt; In-game, quit out of the party and try again. If you've been saving every turn, no progress will be lost.</p>
+<ul>
+<li>I started emulation in a netplay lobby, but the game showed up as a black screen!</li>
+</ul>
+<p>&gt; The black screen is caused by players not starting emulation at the same time. Ensure that no one in the lobby is running the game before the host starts netplay.</p>
+<ul>
+<li>Someone desynced on frame 0!</li>
+</ul>
+<p>&gt; A frame 0 desync means that there's a checksum or code mismatch. All players should have the same game version and active codes.</p>
+<ul>
+<li>Someone desynced on the file select screen!</li>
+</ul>
+<p>&gt; Desyncing on the file select screen means not everyone had the same save. Run Replace.bat if starting a new party, or have a player with the correct save share theirs if finishing an old party.</p>
+<ul>
+<li>I tried both running Replace.bat and replacing a save manually but the save still isn't getting replaced in-game!</li>
+</ul>
+<p>&gt; Pathing issues may arise from moving folders around or dragging the emulator folder instead of extracting it. In these cases, the best solution it to redownload the emulator and try again.</p>
+<ul>
+<li>How do I solve the error <strong>The program can't start because MSVCP140.dll is missing from your computer.</strong>?</li>
+</ul>
+<p>&gt; Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145">https://www.microsoft.com/en-us/download/details.aspx?id=48145</a> and run the file.</p>
+<h1>Bonus</h1>
+<p>Here's a guide to ripping your ISOs: <a href="https://wiki.dolphin-emu.org/index.php?title=Ripping_Games">https://wiki.dolphin-emu.org/index.php?title=Ripping_Games</a></p>
+<p>Here's a few codes that may improve your experience (note that everyone must use the same codes): <a href="http://pastebin.com/raw/Bj94N9EX">http://pastebin.com/raw/Bj94N9EX</a></p>
+<p>Here's our Discord server for Mario Party netplay: <a href="https://discord.gg/ENnJMdU">https://discord.gg/ENnJMdU</a></p>
+</body></html>

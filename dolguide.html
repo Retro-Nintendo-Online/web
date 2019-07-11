@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nintendo Netplay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/flexslider.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/default.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  <!-- =======================================================
+    Theme Name: Lumia
+    Theme URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- Navbar
+    ================================================== -->
+      <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html"><img src="assets/img/logo.png" alt="" ima /></a>
+            </div>
+            <!-- end logo -->
+
+            <!-- top menu -->
+            <div class="navigation">
+              <nav>
+                <ul class="nav topnav">
+                  <li class="active">
+                    <a href="index.html"><i class="icon-home"></i> Home </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><i class="icon-cog"></i> Netplay Guides <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="snesguide.html">Super Nintendo</a></li>
+                      <li><a href="n64guide.html">Nintendo 64</a></li>
+                      <li><a href="dolguide.html">Nintendo GameCube / Wii</a></li>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- end menu -->
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="intro">
+
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <!-- Place somewhere in the <body> of your page -->
+                <p></p><div style="text-align:center;"><img alt="images" src="assets/img/dollogo.png"></div><p></p>
+              <h1>Netplay Setup Guide</h1>
+
+              <h2>Step 1: Download the Emulator</h2>
+              <p>Download Dolphin</p>
+              <p><a href="https://dolphin-emu.org/download/?ref=btn">Download</a>
+              </p><p>This is a link to Dolphin's website where its Buildbot posts its nightly builds.</p>
+              
+              <h2>Step 2: Gather Your Games</h2>
+              <p>Dump the games for the games you want to play. <strong>The Mario Parties</strong>, <strong>Mario Kart Double Dash</strong>, and <strong>Super Smash Bros Melee</strong> are all supported with other games such as <strong>Mario Golf Toadstool Tool</strong> and <strong>Mario Superstar Baseball</strong> too.</p>
+              <p>These dumped games should be placed in a folder that the Emulator can find, and should have the file extension <strong>.ISO</strong></p>
+              
+              <h2>Step 3: Set Up the Emulator</h2>
+              <p>Dolphin should appear inside the downloaded file from the Github. You can launch it using <strong>Dolphin.exe</strong></p>
+              <p>If you want dolphin to run in a <strong>Portable</strong> mode, create a <strong>portable.txt</strong> file inside the Dolphin Directory</p>
+              <p>When Launching, double click the empty box and select the folder where you placed your dumped Games.</p>
+              <p>Then go to <strong>Controllers</strong>. Under <strong>GameCube Controllers</strong> select your controller from the drop-down menu next to <strong>Port 1</strong>. Click <strong>Configure</strong> to the right of the drop-down menu and configure your controls to suit your needs.</p>
+              
+              <h1>Netplay Usage Guide</h1>
+              <h2>Step 1: Launch Your Game</h2>
+              <p>Launch <strong>Dolphin.exe</strong>.</p>
+              <p>From here, got to <strong>Tools</strong> > <strong>Start NetPlay</strong>.</p>
+              <p>The game window is <strong>supposed</strong> to be black. Use the pop-up window to host a party or connect to your fellow partiers.</p>
+              
+              <h2>Step 2: Connect to the Other Players</h2>
+              <p>If you plan to host your own lobby for others to join, there is 2 way to do this. One is to use a traversal code. Or you can use a forwarded port and follow the <strong>Direct Connection</strong> instruction below. If you plan to use traversal follow the <strong>Traversal Server</strong> part.</p>
+              
+              <h4>Traversal Server</h4>
+              <p>If you plan to use traversal, pick the Traversal Server option followed by the Host tab and double-click the game you want to host. Click Copy next to the IP and give it to the players who will join you.</p>
+              
+              <h4>Direct Connection</h4>
+              <p>If you plan to host your own lobby for others to join, pick the Direct Connection option followed by the Host tab and double-click the game you want to host. Click Copy next to the room ID and give it to the players who will join you.</p>
+              
+              <h2>Step 3: Start the Game</h2>
+              <p>Once everyone is together, the host may start the party using <strong>Start</strong>. In case of crashing or desync, please redo the previous step.</p>
+              
+              <h1>Other Notes</h1>
+              <p>Player order is decided by the order of the netplay room by default. The host can change controller ports in the netplay window.</p>
+              <p>It's possible for multiple people to play from the same computer as long as the controllers they're using are plugged in and the host allows them use of multiple ports.</p>
+              <p>It's possible to host a room for 4 other people as long as the host disables their controller in Dolphin..</p>
+              <p>It's possible to host a room for 4 other people as long as the host disables their controller in PJ64.</p>
+              <p>Lag is an unfortunate but necessary part of netplay. The host may use the<strong>Buffer</strong> selection to increase input buffer and make the game smoother.</p>
+              <p>Possible desyncs aren't always truly desyncs, keep playing to make sure if there was truly a desync before restarting.</p>
+              <p>Direct connect may be used even when the traversal server is down, and for players who have trouble with the traversal server at all times it may be the only way to play. Forward a port if the traversal server isn't working for you.</p>
+              
+              <h1>Frequently Asked Questions</h1>
+              <p>Question 1: I already have Dolphin, do I need to download it again?</p>
+              <p>Answer 1: You shouldnt have to if you run the auto updater.</p>
+            
+              <p>Question 2: How can I reduce netplay lag?</p>
+              <p>Answer 2: you can try increasing the buffer, Closing any other programs using internet (web browsers, skype), making sure no one on the same network is using the internet (family, roommates), and finally Ensure it's actually netplay lag by having each player test FPS locally</p>
+              
+              <p>Question 3: The game's graphics are bad! Can I make them look better?</li>
+              <p>Answer 2: The resolution and anti-aliasing of a game can be changed without issue, though it is not recommended as the emulation will require more resources.</p>
+              
+              <p>Question 4: How do I use the GameCube Mic accessory over netplay</p>
+              <p>Answer 4: You can't.</p>      
+
+              <h1>Troubleshooting</h1>
+            <p>Question 1: Whenever I try to join someone's traversal lobby, Dolphin just stalls and I can't connect!</li>
+            <p>Answer 1: Depending on how your network is configured, you may only be able to connect to lobbies hosted over Direct Connect. Either have the player unable to connect host the traversal lobby themselves or have the host forward a port and host over Direct Connect. If you need help forwarding a port, try following <a href="https://wiki.zandronum.com/Port_Forwarding">this</a> guide.</p>
+            
+            <p>Question 2: I was playing a game and the screen went black! What do i do?</li>
+            <p>Answer 2: Quit out of the game and hope this game saves progress</p>
+            
+            <p>Question 3: I started emulation in a netplay lobby, but the game showed up as a black screen!</li>
+            <p>Answer 3: The black screen is caused by players not starting emulation at the same time. Ensure that no one in the lobby is running the game before the host starts netplay.</p>
+            
+            <p>Question 4: Someone desynced!</li>
+            <p>Answer 4: A desync most likely means that the checksum on your games is not all the same since it should sync cheats and saves.</p>
+            
+            <p>Question 5: How do I solve the error <strong>The program can't start because MSVCP140.dll is missing from your computer</strong>?</p>
+            <p>Answer 5: Download <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48145">https://www.microsoft.com/en-us/download/details.aspx?id=48145</a> and run the file.</p>
+
+            <h1>Dumping your Games</h1>
+            <p>GameCube and Wii games are super easy to dump. Follow the guide <a href="https://dolphin-emu.org/docs/guides/ripping-games/">here</a></p>
+            </div>
+      </div>
+
+    </section>
+    <section id="maincontent">
+      <div class="container">
+
+        <div class="row">
+          <div class="span12">
+
+            <!-- end tagline -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Footer
+ ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+           <div class="span4">
+            <div class="widget">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verybottom">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <p>
+                Copyright &copy;  2018-2019 - All rights reserved
+              </p>
+            </div>
+            <div class="span6">
+              <div class="pull-right">
+                <div class="credits">
+                  Created with ❤️ by Cranky Supertoon</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- end wrapper -->
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/raphael-min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/jquery.elastislide.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/jquery.flexslider.js"></script>
+  <script src="assets/js/jquery-hover-effect.js"></script>
+  <script src="assets/js/animate.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="assets/js/custom.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '594671158377447425',
+        channel: '594671158377447427',
+        shard: 'https://disweb.deploys.io'
+      })
+    </script>
+  </body>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nintendo Netplay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/flexslider.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/default.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  <!-- =======================================================
+    Theme Name: Lumia
+    Theme URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- Navbar
+    ================================================== -->
+      <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- logo -->
+            <div class="logo">
+              <a href="index.html"><img src="assets/img/logo.png" alt="" ima /></a>
+            </div>
+            <!-- end logo -->
+
+            <!-- top menu -->
+            <div class="navigation">
+              <nav>
+                <ul class="nav topnav">
+                  <li class="active">
+                    <a href="index.html"><i class="icon-home"></i> Home </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#"><i class="icon-cog"></i> Netplay Guides <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="snesguide.html">Super Nintendo</a></li>
+                      <li><a href="n64guide.html">Nintendo 64</a></li>
+                      <li><a href="dolguide.html">Nintendo GameCube / Wii</a></li>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- end menu -->
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="intro">
+
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <!-- Place somewhere in the <body> of your page -->
+                <p></p><div style="text-align:center;"><img alt="images" src="assets/img/n64logo.png"></div><p></p>
+              <h1>Netplay Setup Guide</h1>
+
+              <h2>Step 1: Download the Emulator</h2>
+              <p>Download Project64 Netplay a project by Cranky Supertoon</p>
+              <p><a href="https://github.com/CrankySupertoon/Project64-Netplay/releases">Main</a>
+              </p><p>This is a link to his website where Project64 Netplay is found. This fork of Project64 2.3.2 is coded very well to run Netplay as well as some other minor tweaks like Cheat Codes and Save Files.</p>
+              
+              <h2>Step 2: Gather Your Games</h2>
+              <p>Dump the games for the games you want to play. <strong>The Mario Party Trilogy</strong>, <strong>Mario Kart 64</strong>, and <strong>Super Smash Bros</strong> are all supported with other games such as <strong>Mario Golf</strong> and <strong>Mario Tennis</strong> too.</p>
+              <p>These dumped games should be placed in a folder that the Emulator can find, and should have the file extension <strong>.Z64</strong>, <strong>.V64</strong>, or <strong>.N64</strong></p>
+              
+              <h2>Step 3: Set Up the Emulator</h2>
+              <p>Project 64 should appear inside the <strong>.ZIP</strong> file from the Github. You can launch it using <strong>Project64.exe</strong></p>
+              <p>Go to <strong>Files</strong> &gt; <strong>Choose ROM Directory</strong> and select the folder where you placed your dumped Games.</p>
+              <p>Then go to <strong>Options</strong> &gt; <strong>Configure Controller Plugin</strong> and select <strong>N-Rage Direct Input</strong>. Then click <strong>Configure</strong> to set up the controller for your games. Configure it to suit your needs. Then click <strong>OK</strong>.</p>
+              
+              <h1>Netplay Usage Guide</h1>
+              <h2>Step 1: Launch Your Game</h2>
+              <p>Launch <strong>Project64.exe</strong>.</p>
+              <p>From here, you can double-click your game to access the netplay window.</p>
+              <p>The game window is <strong>supposed</strong> to be black. Use the pop-up window to host a party or connect to your fellow partiers.</p>
+              
+              <h2>Step 2: Connect to the Other Players</h2>
+              <p>If you plan to host your own lobby for others to join, there is 2 way to do this. One is to use a dedicated server ran by AQZ the person who made the Netplay Support a reality. Or you can use a forwarded port and follow the <strong>Direct Connection</strong> instruction below. If you plan to use AQZ's dedicated server find the <strong>Dedicated Server</strong> part.</p>
+              
+              <h4>Dedicated Server</h4>
+              <p>On the bottom right corner of the NetPlay window you will see a list of servers. Click on the one with the <strong>smallest</strong> ping notified in <strong>ms</strong></p>
+              <p>Then copy the <strong>/join</strong> string of text and give it to your fellow partiers.</p>
+              <p>By pasting in the command They can join in on the fun.</p>
+              
+              <h4>Direct Connection</h4>
+              <p>If you have a forwarded port i <strong>highly recommend</strong> using that instead of the dedicated server.</p>
+              <p>Typing <strong>/host</strong> followed by the port you have forwarded</p>
+              <p>Then the others need to type: <strong>/connect</strong> <<strong>hosts public IP</strong>>:<<strong>hosts forwarded port</strong>></p>
+              
+              <h2>Step 3: Start the Game</h2>
+              <p>Once everyone is together, you may start the party using <strong>/start</strong>. In case of crashing or desync, please redo the previous step.</p>
+              
+              <h1>Other Notes</h1>
+              <p>Every player must have the same save file for saving to work. Be sure to select <strong>Replace Save Files</strong> from the emulator's <strong>Netplay</strong> tab to replace the saves before every game you play.</p>
+              <p>If a Save File is not the same you are going to experience a <strong>Desync</strong></p>
+              <p>Player order is decided by the order of the netplay room. In case of desync or crashing, make sure to join back in the same order or change ports in-game.</p>
+              <p>Make sure everyone playing has only the controller they're using plugged in.</p>
+              <p>It's possible for multiple people to play from the same computer as long as the controllers they're using are plugged in.</p>
+              <p>It's possible to host a room for 4 other people as long as the host disables their controller in PJ64.</p>
+              <p>Lag is an unfortunate but necessary part of netplay. Just use the <strong>/lag</strong> command to increase input buffer and make the game smoother.</p>
+              <p>The emulator's <strong>Netplay</strong> tab includes <strong>Update Emulator</strong>, which will add new features such as new cheat codes and save files, as well as other suprises.</p>
+              
+              <h1>Frequently Asked Questions</h1>
+              <p>Question 1: I already have PJ64, do I need to download it again?</p>
+              <p>Answer 1: This guide provides a version of this emulator geared specifically for netplay, and it's incompatible with other versions.</p>
+              
+              <p>Question 2: How can I reduce netplay lag?</p>
+              <p>Answer 2: you can try increasing the lag via <strong>/lag</strong>, Closing any other programs using internet (web browsers, skype), making sure no one on the same network is using the internet (family, roommates), and finally Ensure it's actually netplay lag by having each player test FPS locally</
+              
+              <p>Question 3: The game's graphics are bad! Can I make them look better?</li>
+              <p>Answer 2: The resolution and anti-aliasing of a game can be changed without issue, though it is not recommended as the emulation will require more resources.</p>
+        
+              <h1>Troubleshooting</h1>
+            <p>Question 1: I was playing a game and the screen went black! What do i do?</li>
+            <p>Answer 1: Quit out of the game and hope this game saves progress</p>
+            
+            <p>Question 2: I started emulation in a netplay lobby, but the game showed up as a black screen!</li>
+            <p>Answer 2: Make sure everyone is using the same plugins as everyone else.</p>
+            
+            <p>Question 3: Someone desynced!</li>
+            <p>Answer 3: A desync most likely means that you didn't all have the same cheat codes or the same save file. <strong>Replace.bat</strong> will replace your save to a 100% save file that has the same stuff so it will not desync.</p>
+            
+            <p>Question 4: Why is the Netplay Window not showing</strong>?</p>
+            <p>Answer 4: You did install <strong>Project64 Netplay</strong> linked at the start of this thread right?</p>
+            
+            <h1>Dumping your Games</h1>
+            <p>Nintendo 64 games are suprisionally hard to dump but some methods can be found such as this <a href="https://donotunplug.tumblr.com/post/141592844762/game-ripping-n64">GameShark</a> one but <a href="https://www.google.com/search?q=dumping+n64+games&oq=dumping+n64+games&aqs=chrome.0.69i59j69i57.2583j0j7&sourceid=chrome&ie=UTF-8">Google</a> is your friend.</p>
+            </div>
+      </div>
+
+    </section>
+    <section id="maincontent">
+      <div class="container">
+
+        <div class="row">
+          <div class="span12">
+
+            <!-- end tagline -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Footer
+ ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+           <div class="span4">
+            <div class="widget">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verybottom">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <p>
+                Copyright &copy;  2018-2019 - All rights reserved
+              </p>
+            </div>
+            <div class="span6">
+              <div class="pull-right">
+                <div class="credits">
+                  Created with ❤️ by Cranky Supertoon</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- end wrapper -->
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/raphael-min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/jquery.elastislide.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/jquery.flexslider.js"></script>
+  <script src="assets/js/jquery-hover-effect.js"></script>
+  <script src="assets/js/animate.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="assets/js/custom.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '594671158377447425',
+        channel: '594671158377447427',
+        shard: 'https://disweb.deploys.io'
+      })
+    </script>
+  </body>
+
+</body>
+</html>
