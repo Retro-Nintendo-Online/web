@@ -24,6 +24,10 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+  <!-- fontawesome-->
+  <script src="https://kit.fontawesome.com/8203acede9.js" crossorigin="anonymous"></script>
+  
+
   <!-- =======================================================
     Theme Name: Lumia
     Theme URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
@@ -31,7 +35,6 @@
     Author URL: https://bootstrapmade.com
   ======================================================= -->
 </head>
-
 
 <body>
   <div id="wrapper">
@@ -78,9 +81,52 @@
         <div class="row">
           <div class="span12">
             <!-- Place somewhere in the <body> of your page -->
-              <center><h1>This Page is a Work In Progress</h1></center>
-          </div>
-        </div>
+                <p></p><div style="text-align:center;"><img alt="images" src="assets/img/nes-sneslogo.png"></div><p></p>
+              <h1>Netplay Setup Guide</h1>
+
+              <h2>Step 1: Download the Emulator</h2>
+              <p>Download Mednafen - RNO Edition</p>
+              <td class="text-center"><a class='btn btn-info btn-lg' href="mednafen-download.html"><span class="fas fa-download"></span> <b>Download</b></a></td>
+
+              <div class="row mx-md-n5">
+              </div>
+              
+              <h2>Step 2: Gather Your Games</h2>
+              <p>Dump the games for the games you want to play. <strong>Super Mario Bros</strong>, <strong>Bomberman</strong>, and <strong>Super Mario Kart</strong> are all supported with other games too.</p>
+              <p>These dumped games should be placed in a folder that the Emulator can find, and should have the file extension <strong>.NES</strong>, <strong>.SMC</strong>, or <strong>.SFC</strong></p>
+              
+              <h2>Step 3: Set Up the Emulator</h2>
+              <p>Mednafen should appear inside the downloaded file from the Github. You can launch it using <strong>medanfen-netplay.exe</strong></p>
+              <p>After Launching, click File -> Open ROM followed by clicking Add. Click the button to select the path for your games. After you finish that click the big button that says Done.</p>
+              <p>Medanfen is a pain to set up <strong>Controllers</strong> with so for now Google it, but we will make it easier in the near future.
+              
+              <h1>Netplay Usage Guide</h1>
+              <h2>Step 1: Launch Your Game</h2>
+              <p>Launch <strong>medanfen-netplay.exe</strong>.</p>
+              <p>From here, go to <strong>File -> Open ROM</strong> Then Select your ROM Directory and click the game you choose to play.</p>
+              
+              <h2>Step 2: Connecting to Madenfen's Netplay Servers</h2>
+              <p>Assumbing you want to play netplay which is why your probally here, on the right side of the GUI check the Netplay box. Then give yourself a Name. After that type in a Game Code. Every Medanfen Netplay game needs a seperate code so be sure to make it unique.</p>
+              
+              <h2>Step 3: Start the Game</h2>
+              <p>After this People can start their game. Desyncing at the start is not a issue since medanfen syncs Save States and not Save Files</p>
+              
+              <h1>Other Notes</h1>
+              <p>Player order is decided by the order of people clicking Start Medanfen room by default.</p>
+              <p>Hitting the letter T on your keyboard can give you access to medanfen's netplay console to type to others, and add commands.</p>
+              <p>Lag is an unfortunate but necessary part of netplay. You may use the<strong>/ping</strong> command to see how much ping the game is currently using.</p>
+              <p>Direct connect can't currently be used but we hope to adopt it soon once Cranky cracks Mednafen Server.</p>
+              
+              <h1>Frequently Asked Questions</h1>
+              <p>Question 1: I already have Mednafen, do I need to download it again?</p>
+              <p>Answer 1: We use a custom version geared towards Netplay.</p>
+            
+              <p>Question 2: How can I reduce netplay lag?</p>
+              <p>Answer 2: Closing any other programs using internet (web browsers, skype), making sure no one on the same network is using the internet (family, roommates), and finally Ensure it's actually netplay lag by having each player test FPS locally</p>    
+
+            <h1>Dumping your Games</h1>
+            <p>NES and SNES games are suprisonally hard to dump but soem methods can be found by doing a quick google search for <a href="https://www.google.com/search?q=dumping+NES+games&oq=dumping+NES+games&aqs=chrome..69i57j0l5.2354j0j7&sourceid=chrome&ie=UTF-8">Dumping NES Games</a> or <a href="https://www.google.com/search?sxsrf=ACYBGNQ4Fb__8ev1Gd0amzCgK-_j5fTljg%3A1571521618027&ei=UoSrXd2ZAYSZ_QaxpqXQBg&q=dumping+SNES+games&oq=dumping+SNES+games&gs_l=psy-ab.3...90964.90964..91563...0.4..0.89.89.1......0....1..gws-wiz.......0i71.yff_mipp1YA&ved=0ahUKEwjdirKepqnlAhWETN8KHTFTCWoQ4dUDCAs&uact=5">Dumping SNES Games</a>. Remember <b>Google</b> is your friend.</p>          </a></p>
+            </div>
       </div>
 
     </section>
